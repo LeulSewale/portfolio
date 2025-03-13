@@ -75,7 +75,7 @@ export default function Home() {
           <h2 className="text-3xl font-bold text-center mb-12">About Me</h2>
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="aspect-square relative rounded-xl overflow-hidden">
-              <img src="/leul.png?height=600&width=600" alt="Your Name" className="object-cover w-full h-full" />
+              <img src="/leul.png?height=600&width=600" alt="Leul " className="object-cover w-full h-full" />
             </div>
             <div>
               <h3 className="text-2xl font-semibold mb-4">Who I Am</h3>
