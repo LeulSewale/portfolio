@@ -4,58 +4,23 @@ import { useState } from "react"
 import { Card, CardContent } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { ChevronLeft, ChevronRight, Quote } from "lucide-react"
+import type { Testimonial } from "@/lib/types"
 
-interface Testimonial {
-  id: number
-  name: string
-  role: string
-  company: string
-  content: string
-  avatar: string
+interface TestimonialsProps {
+  testimonials: Testimonial[]
 }
 
-export function Testimonials() {
-  const testimonials: Testimonial[] = [
-    {
-      id: 1,
-      name: "Abel Mulugeta",
-      role: "CEO",
-      company: "Dallol Tech",
-      content:
-        "Working with this developer was an absolute pleasure. They delivered our website redesign on time and exceeded our expectations. Their attention to detail and ability to translate our vision into reality was impressive.",
-      avatar: "/placeholder.svg?height=100&width=100",
-    },
-    // {
-    //   id: 2,
-    //   name: "Michael Chen",
-    //   role: "Founder & CEO",
-    //   company: "StartupX",
-    //   content:
-    //     "I hired this developer to build our MVP, and they did an outstanding job. They were communicative, professional, and delivered high-quality code. They went above and beyond to ensure our product was perfect.",
-    //   avatar: "/placeholder.svg?height=100&width=100",
-    // },
-    // {
-    //   id: 3,
-    //   name: "Emily Rodriguez",
-    //   role: "Product Manager",
-    //   company: "DesignHub",
-    //   content:
-    //     "An exceptional developer who brings both technical expertise and creative thinking to the table. They helped us solve complex problems with elegant solutions and were a valuable addition to our project.",
-    //   avatar: "/placeholder.svg?height=100&width=100",
-    // },
-    // {
-    //   id: 4,
-    //   name: "David Kim",
-    //   role: "E-commerce Director",
-    //   company: "RetailPlus",
-    //   content:
-    //     "Our e-commerce platform needed significant performance improvements, and this developer delivered exactly what we needed. The site is now faster, more stable, and our conversion rates have improved dramatically.",
-    //   avatar: "/placeholder.svg?height=100&width=100",
-    // },
-  ]
-
+export function Testimonials({ testimonials }: TestimonialsProps) {
   const [activeIndex, setActiveIndex] = useState(0)
   const [direction, setDirection] = useState<"left" | "right" | null>(null)
+
+  if (!testimonials || testimonials.length === 0) {
+    return (
+      <div className="text-center text-muted-foreground">
+        No testimonials available yet.
+      </div>
+    )
+  }
 
   const nextTestimonial = () => {
     setDirection("right")
@@ -100,25 +65,29 @@ export function Testimonials() {
         </div>
       </div>
 
-      <div className="flex justify-center mt-6 gap-2">
-        <Button variant="outline" size="icon" onClick={prevTestimonial} aria-label="Previous testimonial">
-          <ChevronLeft className="h-4 w-4" />
-        </Button>
-        <Button variant="outline" size="icon" onClick={nextTestimonial} aria-label="Next testimonial">
-          <ChevronRight className="h-4 w-4" />
-        </Button>
-      </div>
+      {testimonials.length > 1 && (
+        <>
+          <div className="flex justify-center mt-6 gap-2">
+            <Button variant="outline" size="icon" onClick={prevTestimonial} aria-label="Previous testimonial">
+              <ChevronLeft className="h-4 w-4" />
+            </Button>
+            <Button variant="outline" size="icon" onClick={nextTestimonial} aria-label="Next testimonial">
+              <ChevronRight className="h-4 w-4" />
+            </Button>
+          </div>
 
-      <div className="flex justify-center mt-4 gap-2">
-        {testimonials.map((_, index) => (
-          <button
-            key={index}
-            className={`w-2 h-2 rounded-full transition-colors ${index === activeIndex ? "bg-primary" : "bg-muted"}`}
-            onClick={() => setActiveIndex(index)}
-            aria-label={`Go to testimonial ${index + 1}`}
-          />
-        ))}
-      </div>
+          <div className="flex justify-center mt-4 gap-2">
+            {testimonials.map((_, index) => (
+              <button
+                key={index}
+                className={`w-2 h-2 rounded-full transition-colors ${index === activeIndex ? "bg-primary" : "bg-muted"}`}
+                onClick={() => setActiveIndex(index)}
+                aria-label={`Go to testimonial ${index + 1}`}
+              />
+            ))}
+          </div>
+        </>
+      )}
     </div>
   )
 }

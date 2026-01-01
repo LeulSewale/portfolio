@@ -1,0 +1,402 @@
+{
+    "profile": {
+        "name": "Leul Sewale",
+        "tagline": "I'm a freelance developer specializing in creating beautiful, functional websites and applications.",
+        "bio": [
+            "Dynamic and results-driven Software Engineer with over 3 years of professional experience in full-stack and mobile development. Known for adaptability, accountability, and strong problem-solving skills. Successfully contributed to high-impact website and mobile app projects, including the development of an intelligent Smart Patient-care and Assistance system leveraging machine learning predictions. Currently excelling as a Software Developer, specializing in front-end, mobile application, and back-end development, with a focus on delivering innovative and scalable solutions.",
+            "My approach combines technical expertise with a deep understanding of user experience and business goals. I believe in creating solutions that not only look great but also deliver results."
+        ],
+        "location": "Addis Ababa, Ethiopia",
+        "experience": "3+ Years",
+        "email": "leulsewale10@gmail.com",
+        "availability": "Freelance / Contract",
+        "image": "/leul.png",
+        "socialLinks": {
+            "linkedin": "https://www.linkedin.com/in/leul-sewale-5734b0246/",
+            "github": "https://github.com/LeulSewale"
+        }
+    },
+    "skillCategories": [
+        {
+            "id": "frontend",
+            "title": "Frontend Development",
+            "description": "Creating responsive and interactive user interfaces",
+            "icon": "Layout",
+            "skills": [
+                {
+                    "name": "HTML/CSS",
+                    "level": 95
+                },
+                {
+                    "name": "JavaScript/TypeScript",
+                    "level": 90
+                },
+                {
+                    "name": "React.js",
+                    "level": 92
+                },
+                {
+                    "name": "Next.js",
+                    "level": 88
+                }
+            ],
+            "visible": true,
+            "order": 1
+        },
+        {
+            "id": "backend",
+            "title": "Backend Development",
+            "description": "Building robust server-side applications",
+            "icon": "Code",
+            "skills": [
+                {
+                    "name": "Node.js",
+                    "level": 85
+                },
+                {
+                    "name": "Express",
+                    "level": 80
+                },
+                {
+                    "name": "Python",
+                    "level": 75
+                },
+                {
+                    "name": "PHP",
+                    "level": 70
+                }
+            ],
+            "visible": true,
+            "order": 2
+        },
+        {
+            "id": "database",
+            "title": "Database Management",
+            "description": "Designing and optimizing database structures",
+            "icon": "Database",
+            "skills": [
+                {
+                    "name": "MongoDB",
+                    "level": 85
+                },
+                {
+                    "name": "PostgreSQL",
+                    "level": 80
+                },
+                {
+                    "name": "MySQL",
+                    "level": 82
+                },
+                {
+                    "name": "Firebase",
+                    "level": 88
+                }
+            ],
+            "visible": true,
+            "order": 3
+        },
+        {
+            "id": "mobile",
+            "title": "Mobile Development",
+            "description": "Creating native and cross-platform mobile apps",
+            "icon": "Smartphone",
+            "skills": [
+                {
+                    "name": "Flutter",
+                    "level": 90
+                },
+                {
+                    "name": "iOS (Swift)",
+                    "level": 70
+                },
+                {
+                    "name": "Android (Kotlin)",
+                    "level": 72
+                }
+            ],
+            "visible": true,
+            "order": 4
+        },
+        {
+            "id": "design",
+            "title": "UI/UX Design",
+            "description": "Designing intuitive and beautiful user experiences",
+            "icon": "Layers",
+            "skills": [
+                {
+                    "name": "Figma",
+                    "level": 85
+                },
+                {
+                    "name": "Adobe XD",
+                    "level": 75
+                }
+            ],
+            "visible": true,
+            "order": 5
+        },
+        {
+            "id": "performance",
+            "title": "Performance Optimization",
+            "description": "Improving speed and efficiency of applications",
+            "icon": "Gauge",
+            "skills": [
+                {
+                    "name": "Lazy Loading",
+                    "level": 85
+                },
+                {
+                    "name": "Code Splitting",
+                    "level": 82
+                },
+                {
+                    "name": "Caching Strategies",
+                    "level": 80
+                },
+                {
+                    "name": "Image Optimization",
+                    "level": 88
+                }
+            ],
+            "visible": true,
+            "order": 6
+        },
+        {
+            "id": "devops",
+            "title": "DevOps",
+            "description": "Streamlining development and deployment processes",
+            "icon": "Workflow",
+            "skills": [
+                {
+                    "name": "Docker",
+                    "level": 75
+                },
+                {
+                    "name": "CI/CD",
+                    "level": 78
+                },
+                {
+                    "name": "AWS",
+                    "level": 70
+                },
+                {
+                    "name": "Vercel",
+                    "level": 90
+                },
+                {
+                    "name": "Netlify",
+                    "level": 85
+                }
+            ],
+            "visible": true,
+            "order": 7
+        },
+        {
+            "id": "versioncontrol",
+            "title": "Version Control",
+            "description": "Managing code changes and collaboration",
+            "icon": "GitBranch",
+            "skills": [
+                {
+                    "name": "Git",
+                    "level": 92
+                },
+                {
+                    "name": "GitHub",
+                    "level": 90
+                },
+                {
+                    "name": "GitLab",
+                    "level": 85
+                },
+                {
+                    "name": "Bitbucket",
+                    "level": 80
+                },
+                {
+                    "name": "Code Reviews",
+                    "level": 88
+                }
+            ],
+            "visible": true,
+            "order": 8
+        }
+    ],
+    "projects": [
+        {
+            "id": "nutemaru",
+            "title": "Nutemaru Application",
+            "description": "A fully responsive online-learning platform with payment integration",
+            "tags": [
+                "flutter(dart)",
+                "Firebase Auth",
+                "Socket_io_client",
+                "Bloc"
+            ],
+            "imageUrl": "/nutemaru.jpg",
+            "liveUrl": "https://play.google.com/store/apps/details?id=com.nunatechsolutions.nutemaru",
+            "visible": true,
+            "order": 1,
+            "featured": true
+        },
+        {
+            "id": "bus-booking",
+            "title": "Online-bus Booking Application",
+            "description": "A bus booking application with real-time tracking and notifications",
+            "tags": [
+                "flutter(dart)",
+                "Firebase Auth",
+                "Provider"
+            ],
+            "imageUrl": "/portofolioss1.jpg",
+            "visible": true,
+            "order": 2,
+            "featured": false
+        },
+        {
+            "id": "landing-page",
+            "title": "Landing Page",
+            "description": "A high-converting landing page for a SaaS product",
+            "tags": [
+                "React js",
+                "HTML/CSS",
+                "JavaScript",
+                "Tailwind CSS"
+            ],
+            "imageUrl": "/daLLOL.jpg",
+            "liveUrl": "https://dalloltech.com/",
+            "visible": true,
+            "order": 3,
+            "featured": false
+        },
+        {
+            "id": "smart-patientcare",
+            "title": "Smart Patientcare and Assistance",
+            "description": "Smart patientcare is a health-care delivery system that uses trending technology such as artificial intelligence, video conferencing, and mobile internet to remotely access information, connect people, and institutions in the healthcare sector, manages and responds to healthcare needs",
+            "tags": [
+                "React js",
+                "Flutter",
+                "Firebase",
+                "Redux",
+                "Provider"
+            ],
+            "imageUrl": "/portfolios2.jpg",
+            "visible": true,
+            "order": 4,
+            "featured": true
+        },
+        {
+            "id": "dashboard-ui",
+            "title": "Dashboard UI",
+            "description": "An admin dashboard with data visualization and user management",
+            "tags": [
+                "React js",
+                "HTML/CSS",
+                "JavaScript",
+                "Tailwind CSS"
+            ],
+            "imageUrl": "/wedeni.jpg",
+            "liveUrl": "https://wedeni.dalloltech.com/",
+            "visible": true,
+            "order": 5,
+            "featured": false
+        },
+        {
+            "id": "blog-platform",
+            "title": "Blog Platform",
+            "description": "A content management system with custom editor",
+            "tags": [
+                "React js",
+                "HTML/CSS",
+                "JavaScript",
+                "Tailwind CSS",
+                "node js",
+                "express js",
+                "MongoDB"
+            ],
+            "imageUrl": "/adminpage.jpg",
+            "liveUrl": "https://bus.dalloltech.com/company",
+            "visible": true,
+            "order": 6,
+            "featured": false
+        }
+    ],
+    "testimonials": [
+        {
+            "id": "abel-mulugeta",
+            "name": "Abel Mulugeta",
+            "role": "CEO",
+            "company": "Dallol Tech",
+            "content": "Working with this developer was an absolute pleasure. They delivered our website redesign on time and exceeded our expectations. Their attention to detail and ability to translate our vision into reality was impressive.",
+            "avatar": "/placeholder.svg?height=100&width=100",
+            "visible": true,
+            "order": 1
+        }
+    ],
+    "navigation": [
+        {
+            "label": "About",
+            "href": "#about",
+            "visible": true
+        },
+        {
+            "label": "Skills",
+            "href": "#skills",
+            "visible": true
+        },
+        {
+            "label": "Projects",
+            "href": "#projects",
+            "visible": true
+        },
+        {
+            "label": "Testimonials",
+            "href": "#testimonials",
+            "visible": true
+        },
+        {
+            "label": "Contact",
+            "href": "#contact",
+            "visible": true
+        }
+    ],
+    "sections": [
+        {
+            "id": "hero",
+            "title": "Hero",
+            "visible": true,
+            "order": 1
+        },
+        {
+            "id": "about",
+            "title": "About Me",
+            "visible": true,
+            "order": 2
+        },
+        {
+            "id": "skills",
+            "title": "My Skills",
+            "visible": true,
+            "order": 3
+        },
+        {
+            "id": "projects",
+            "title": "My Projects",
+            "visible": true,
+            "order": 4
+        },
+        {
+            "id": "testimonials",
+            "title": "What Clients Say",
+            "visible": true,
+            "order": 5
+        },
+        {
+            "id": "contact",
+            "title": "Get In Touch",
+            "visible": true,
+            "order": 6
+        }
+    ],
+    "updatedAt": "2025-12-25T10:53:00Z"
+}
